@@ -2716,6 +2716,7 @@ public class TestHiveDecimal extends HiveDecimalTestBase {
 
     HiveDecimalWritable decimalWritableOut = new HiveDecimalWritable(dec);
     decimalWritableOut.write(out);
+    out.flush();
 
     byte[] valueBytes = baos.toByteArray();
 
